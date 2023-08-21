@@ -1,0 +1,292 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.Main {
+    background-image: linear-gradient(rgba(2, 1, 1, 0.4), rgba(0, 0, 0, 0.8)), url(netflix_background.jpg);
+    width: 84%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.netflix-image {
+    width: 18%;
+}
+
+
+.sign-in {
+    background-color: red;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.language {
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 28px;
+    margin-left: auto;
+}
+
+.language1 {
+    padding: 8px 15px 8px 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    background-color: rgb(38, 36, 36);
+    color: white;
+}
+
+
+.sign-in:hover {
+    background-color: rgb(89, 2, 2);
+}
+
+.container {
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container2 {
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.2em;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.email {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.email-text {
+    background-color: rgb(11, 11, 11);
+    padding: 15px 30px;
+    border-radius: 4px;
+    width: 60%;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+.started {
+    background-color: rgb(11, 11, 11);
+    padding: 15px 30px;
+    border-radius: 4px;
+    width: 50%;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.started:hover {
+    background-color: rgb(89, 2, 2);
+}
+
+.feature {
+    padding: 50px 12%;
+    font-size: 23px;
+
+}
+
+.feature h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.section1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.section1-text {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.section1-image {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.section1-image img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.faq {
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.faq h2 {
+    font-size: 40px;
+    font-weight: 500px;
+}
+
+.QandA {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.QandA li {
+    list-style: none;
+    width: 100%;
+    padding: 6px;
+}
+
+.QandA li label {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    background: rgb(100, 94, 94);
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+label::after {
+    content: '+';
+    right: 20px;
+    font-size: 35px;
+    position: absolute;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.QandA .content {
+    background: rgb(58, 56, 56);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.QandA input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq .email {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        position: unset;
+        transform: none;
+        padding-top: 70px;
+    }
+
+
+    .sign-in {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+    .language1 {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+
+    .container2 h1 {
+        font-size: 30px;
+    }
+
+    .container2 p {
+        font-size: 12px;
+    }
+
+    .email .email-text {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    .email .started {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    .section1-image,
+    .section1-text {
+        flex-basis: 100%;
+    }
+
+    .feature h2 {
+        font-size: 30px;
+    }
+
+    .feature p {
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+ .email .started {
+     font-size: 10px;
+     padding: 4px 8px;
+ }
+}
